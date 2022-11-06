@@ -28,7 +28,7 @@ class Node:
       if self.left:
          self.left.PrintTree()
       if self.data != "":
-        print('\033[1m|'+self.data+'\033[0m'),
+        print('\033[4;1m'+self.data+'\033[0m'),
         print("✓ "+str(self.numero)),
       if self.right:
          self.right.PrintTree()
@@ -99,6 +99,6 @@ temptext=[]
 while k < len(subtemas):
     if(subtemas[k][1] != '[]'):
         print("\033[1m|Tema: "+subtemas[k][0]+'\033[0m' )
-        print("\t* Subtema con sus páginas ordenadas: "+ subtemas[k][1])
+        print("\t \033[4m* Subtema con sus páginas ordenadas:\033[0m "+ subtemas[k][1])
 
     k += 1
